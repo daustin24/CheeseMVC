@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Folder Include="Views\Cheese\" />
+    <Folder Include="Models\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\Cheese\Edit.html" />
