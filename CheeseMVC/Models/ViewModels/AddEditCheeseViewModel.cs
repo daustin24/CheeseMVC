@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 
@@ -19,13 +20,13 @@ namespace CheeseMVC.Models.ViewModels
 
 
 
-        public AddEditCheeseViewModel(Cheese ch)
+        public AddEditCheeseViewModel(Cheese ch, IEnumerable<CheeseCategory> categories) : base(categories)
         {
             // Use the cheese object to initalize 
-            CheeseId = ch.CheeseId;
+            CheeseId = ch.ID;
             Name = ch.Name;
             Description = ch.Description;
-            Type = ch.Type;
+            CategoryID = ch.CategoryID;
             Rating = ch.Rating;
         }
     }

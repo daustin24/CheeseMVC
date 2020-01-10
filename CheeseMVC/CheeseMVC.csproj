@@ -11,8 +11,20 @@
   <ItemGroup>
     <Folder Include="Views\Cheese\" />
     <Folder Include="Models\ViewModels\" />
+    <Folder Include="Data\" />
+    <Folder Include="Views\Category\" />
+    <Folder Include="Views\Menu\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\Cheese\Edit.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0" />
   </ItemGroup>
 </Project>
